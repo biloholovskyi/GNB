@@ -77,6 +77,41 @@
   &__humb {
     display: none;
   }
+
+  &--content {
+    background-color: transparent;
+
+    .header__logo {
+      .logo__text {
+        color: $main-dark;
+      }
+    }
+
+    .header__nav {
+      ul {
+        li {
+          a {
+            color: $main-dark;
+          }
+        }
+      }
+    }
+
+    .header__number {
+      color: $main-dark;
+    }
+
+    .header__humb {
+
+      img {
+        filter: invert(1) brightness(0);
+
+        &.active {
+          filter: none;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1300px) {
@@ -200,6 +235,7 @@
             letter-spacing: 0.01em;
             text-transform: uppercase;
             text-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+            color: #fff;
           }
         }
       }
@@ -208,6 +244,7 @@
         display: block;
         margin-left: 0;
         text-align: center;
+        max-width: 100%;
       }
     }
 

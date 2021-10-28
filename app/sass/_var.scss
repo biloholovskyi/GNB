@@ -6,6 +6,7 @@ $family-second: 'Roboto', sans-serif;
 // colors
 
 $yellow-main: #F3BA00;
+$main-dark: #111;
 
 .main-button {
   font-family: $family-second;
@@ -53,6 +54,7 @@ $yellow-main: #F3BA00;
     border: none;
     background-color: $yellow-main;
     width: calc(100% - 12px);
+    max-width: max-content;
 
     &::before {
       width: 12.84px;

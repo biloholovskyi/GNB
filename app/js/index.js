@@ -8,8 +8,10 @@ $(document).ready((e) => {
 
     if(headerNav.hasClass('active')) {
       $(this).children('img').attr('src', '../media/icon/close.svg')
+        .addClass('active');
     } else {
       $(this).children('img').attr('src', '../media/icon/humb.svg')
+        .removeClass('active')
     }
 
   })
