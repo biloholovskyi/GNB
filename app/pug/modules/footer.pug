@@ -1,7 +1,44 @@
 footer.footer
   .container
     .row
-      .col-6
-        p her te
-      .col-6
-        p her te
+      .col-12
+        .footer__top
+          .footer__nav.navigations
+            ul
+              li
+                a(href='/services') Услуги
+              li.active
+                a(href='/about') О компании
+              li
+                a(href='/cases') Наши работы
+              li
+                a(href='/tools') Спецтехника
+              li
+                a(href='/contacts') Контакты
+
+          .footer__socials
+            a.social(href='#')
+              .social__icon(
+                style="mask: url(../media/icon/facebook.svg) no-repeat center; " +
+                "-webkit-mask: url(../media/icon/facebook.svg) no-repeat center;" +
+                "-webkit-mask-size: contain;" +
+                "mask-size: contain"
+                )
+            a.social(href='#')
+              .social__icon(
+                style="mask: url(../media/icon/telegram.svg) no-repeat center;" +
+                "-webkit-mask: url(../media/icon/telegram.svg) no-repeat center;" +
+                "-webkit-mask-size: contain;" +
+                "mask-size: contain"
+                )
+            a.social(href='#')
+              .social__icon(
+                style="mask: url(../media/icon/viber.svg) no-repeat center; " +
+                "-webkit-mask: url(../media/icon/viber.svg) no-repeat center;" +
+                "mask-size: contain;" +
+                "-webkit-mask-size: contain;"
+                )
+
+        .footer__bottom
+          .footer__coop 2021 © ООО "Управление механизацией №1". Все права защищены
+          a.footer__political(href='#' target='_blank') Политика конфиденциальности

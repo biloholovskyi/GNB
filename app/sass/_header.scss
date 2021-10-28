@@ -49,47 +49,6 @@
     }
   }
 
-  &__nav {
-    ul {
-      display: flex;
-
-      li {
-        list-style: none;
-        margin-right: 36px;
-        display: block;
-        position: relative;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        a {
-          font-family: $family-second;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          color: #FFFFFF;
-          position: relative;
-          z-index: 2;
-        }
-
-        &.active {
-          &::before {
-            content: '';
-            width: calc(100% + 4px);
-            height: 8px;
-            background-color: $yellow-main;
-            bottom: 0;
-            left: -2px;
-            position: absolute;
-            z-index: 1;
-          }
-        }
-      }
-    }
-  }
-
   &__right {
     display: flex;
     align-items: center;
