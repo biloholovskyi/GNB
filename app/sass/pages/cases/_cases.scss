@@ -1,3 +1,107 @@
+@import "../../_var";
+
 .cases {
-  padding: 184px 0 100px 0;
+  padding: 184px 0 44px 0;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 64px;
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 56px;
+
+    .case-photo {
+      width: 282px;
+      min-width: 282px;
+      height: 282px;
+      background-position: center;
+      background-size: cover;
+      margin-right: 32px;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        transform: rotate(-38deg);
+        bottom: -35px;
+        right: -23px;
+      }
+    }
+
+    .case-text {
+      .name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: $main-dark;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-family: $family-second;
+        color: $main-dark;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
+
+      .more-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .text {
+          color: $main-dark;
+          font-family: $family-second;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          width: max-content;
+        }
+
+        .arrow {
+          margin-left: 10px;
+          width: 48px;
+          max-width: 48px;
+          height: 48px;
+          background-image: url(../media/icon/polygon.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+          &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url(../media/icon/arrow.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
 }

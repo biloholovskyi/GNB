@@ -116,3 +116,22 @@ $main-dark: #111;
     }
   }
 }
+
+.decor-title {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    z-index: 22;
+    width: 183px;
+    height: 154.81px;
+    position: absolute;
+    top: -105px;
+    left: -140px;
+    background-image: url(../media/icon/hex.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
