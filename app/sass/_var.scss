@@ -18,6 +18,7 @@ $yellow-main: #F3BA00;
   border-top: 1px solid #FFFFFF;
   border-left: 1px solid #FFFFFF;
   position: relative;
+  width: calc(100% - 12px);
   
   &::after {
     content: '';
@@ -47,6 +48,29 @@ $yellow-main: #F3BA00;
     top: 0;
     right: 0;
     background-color: #fff;
+  }
+
+  &--color {
+    border: none;
+    background-color: $yellow-main;
+
+    &::before {
+      width: 12.84px;
+      height: 47.21px;
+      transform: rotate(-30deg);
+      left: auto;
+      right: 0;
+      background-color: $yellow-main;
+    }
+
+    &::after {
+      width: 12px;
+      height: calc(100% - 7px);
+      transform: rotate(0);
+      bottom: 7px;
+      right: -12px;
+      background-color: $yellow-main;
+    }
   }
 }
 
