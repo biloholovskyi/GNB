@@ -17,15 +17,17 @@ block content
         .body__form
           .title-form Закажите похожий проект прямо сейчас
           form
+            .label Ваше имя
             input(
               type='text'
               name='name'
               placeholder='Ваше имя'
               )
+            .label Номер телефона
             input(
               type='text'
               name='phone'
-              placeholder='Ваш номер телефона'
+              placeholder='Номер телефона'
             )
             button(type='submit').main-button.main-button--color.main-button--dark.main-button--small Отправить
 
@@ -37,7 +39,7 @@ block content
         .col-12
           h1.cases__title.decor-title Кейсы
       .row
-        .col-12
+        .col-6.col-md-12
           .cases__item
             .case-photo(style='background-image: url(../media/image/cases/1.jpg)')
             .case-text
@@ -46,7 +48,7 @@ block content
               .more-btn
                 .text Подробнее
                 .arrow
-        .col-12
+        .col-6.col-md-12
           .cases__item
             .case-photo(style='background-image: url(../media/image/cases/1.jpg)')
             .case-text
@@ -55,7 +57,7 @@ block content
               .more-btn
                 .text Подробнее
                 .arrow
-        .col-12
+        .col-6.col-md-12
           .cases__item
             .case-photo(style='background-image: url(../media/image/cases/1.jpg)')
             .case-text

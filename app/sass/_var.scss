@@ -156,6 +156,12 @@ $main-dark: #111;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  @media (max-width: 767px) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .no-scroll {
