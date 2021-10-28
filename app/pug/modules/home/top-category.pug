@@ -1,0 +1,41 @@
+include ../../mixins/categoryItem
+include ../../mixins/card-link
+
+.top-category
+  .container
+    .row
+      .col-12
+        .top-category__title Top categories
+    .row
+      .col-9
+        .top-category__body
+          +categoryItem('⌚', 'accessories')
+          +categoryItem('🌸', 'beauty')
+          +categoryItem('👗', 'fashion')
+          +categoryItem('👚', 'clothing')
+          +categoryItem('🎁', 'gifts')
+          +categoryItem('🍔', 'food')
+          +categoryItem('💄', 'cosmetics')
+          +categoryItem('💉', 'supplements')
+          +categoryItem('💉', 'hair care')
+          +categoryItem('🍿', 'snacks')
+          +categoryItem('🚲', 'transport')
+          +categoryItem('🍿', 'chocolate')
+          +categoryItem('🍫', 'chocolate')
+          +categoryItem('📷', 'photography')
+          +categoryItem('👖', 'leggings')
+          +categoryItem('📦', 'delivery')
+          +categoryItem('👩‍', 'hair')
+          +categoryItem('🥊', 'activewear')
+          +categoryItem('💪', 'gym gear')
+          +categoryItem('🎮', 'gaming')
+          +categoryItem('👘', 'homewares')
+          +categoryItem('💨', 'vaping')
+          +categoryItem('❤', 'health')
+          +categoryItem('🍶', 'skin care')
+          +categoryItem('🍏', 'vegan')
+          +categoryItem('🎨', 'art')
+          +categoryItem('☘', 'organic')
+          +categoryItem('👶', 'baby')
+      .col-3
+        +card-link("Check full catalog")

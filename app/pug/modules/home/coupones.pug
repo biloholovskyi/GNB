@@ -1,0 +1,23 @@
+include ../../mixins/coupons
+
+.coupons-home
+  .container
+    .row
+      .col-6
+        .coupons-home__title Coupons of the day
+        .coupons-home__body
+          +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
+          +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
+          +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
+          +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
+          +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
+        .show-all All coupons of the day
+      .col-6
+        .coupons-home__title New coupons
+        .coupons-home__body
+          +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
+          +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
+          +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
+          +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
+          +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
+        .show-all All new coupons

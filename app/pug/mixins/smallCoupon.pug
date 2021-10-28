@@ -1,0 +1,11 @@
+mixin coupon-home(text, name, rate)
+  .coupon-home.coupon-home--shop
+    .top
+      .name= text
+      .button Get code
+    .bottom
+      .name= name
+      .rate
+        .result= rate
+        .icon.like 👍
+        .icon.dislike 👎
