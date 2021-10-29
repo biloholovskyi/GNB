@@ -1,0 +1,23 @@
+.main-form
+  img.rect-img(alt='rect' src='../media/icon/rect.svg')
+
+  .container
+    .row
+      .col-12.col-md-6
+        .main-form__title
+          span Остались вопросы?
+          div Оставьте заявку и мы вам перезвоним
+      .col-12.col-md-6
+        form.main-form__form
+          label(for='name') Ваше имя
+          input(id='name' name='name' type='text')
+
+          label(for='phone') Ваше имя
+          input(id='phone' name='phone' type='text')
+
+          label(for='name') Ваше имя
+          textarea(id='desc' name='desc')
+
+          .main-form__submit-block
+            button(type='submit').main-button.main-button--color Отправить
+            .form-desc Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных

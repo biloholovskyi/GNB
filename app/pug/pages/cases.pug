@@ -1,6 +1,7 @@
 extends ../layout/main-content
 
 block variables
+  - const pageTitle = 'Главная'
 
 block content
   .cases
@@ -66,3 +67,4 @@ block content
               .more-btn
                 .text Подробнее
                 .arrow
+  include ../modules/main-form
