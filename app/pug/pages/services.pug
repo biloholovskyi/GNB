@@ -1,0 +1,15 @@
+extends ../layout/main-content
+
+block variables
+  - const pageTitle = 'Услуги'
+
+block content
+  .services
+    .container
+      .row
+        .col-12
+          .services__title.decor-title Услуги
+
+    include ../modules/pallet-services
+
+  include ../modules/main-form

@@ -1,0 +1,23 @@
+@import "../../var";
+
+.services {
+  padding: 184px 0 100px 0;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $main-dark;
+    font-family: $family-second;
+    margin-bottom: 53px;
+  }
+}
+
+@media (max-width: 991px) {
+  .services {
+    padding: 104px 0 48px;
+  }
+}
