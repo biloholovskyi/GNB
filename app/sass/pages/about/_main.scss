@@ -64,3 +64,22 @@
     z-index: 10;
   }
 }
+
+@media (max-width: 767px) {
+  .about-page__main {
+    min-height: auto;
+    padding-top: 144px;
+    padding-bottom: 120px;
+
+    .about-main__title {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+
+    .about-main__desc {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

@@ -19,7 +19,21 @@ $(document).ready((e) => {
     margin: 24,
     dots: false,
     nav: true,
-    navText: ''
+    navText: '',
+    responsive: {
+      0: {
+        items: 2,
+        dots: true
+      },
+      767: {
+        items: 2,
+        dots: false
+      },
+      991: {
+        items: 3,
+        dots: false
+      }
+    }
   })
 
   // reviews slider
@@ -29,7 +43,21 @@ $(document).ready((e) => {
     margin: 24,
     dots: false,
     nav: true,
-    navText: ''
+    navText: '',
+    responsive: {
+      0: {
+        items: 1,
+        dots: true
+      },
+      767: {
+        items: 2,
+        dots: false
+      },
+      991: {
+        items: 3,
+        dots: false
+      }
+    }
   })
 
   // show mobile menu

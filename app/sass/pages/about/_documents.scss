@@ -26,7 +26,7 @@
   &__hex {
     content: '';
     position: absolute;
-    z-index: 10;
+    z-index: 15;
     width: 183px;
     height: 154.81px;
     object-fit: contain;
@@ -56,17 +56,13 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__item {
-    width: calc(100% / 4);
-    padding-right: 40px;
+    width: calc(100% / 4 - 20px);
     margin-bottom: 40px;
     cursor: pointer;
-
-    &:nth-child(4n+4) {
-      padding-left: 0;
-    }
 
     img {
       width: 100%;
@@ -97,6 +93,27 @@
       line-height: 20px;
       font-family: $family-second;
       color: $main-gray;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .documents {
+    padding: 120px 0 51px 0;
+
+    &__hex {
+      display: none;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+
+    &__item {
+      width: calc(100% / 2 - 10px);
+      margin-bottom: 24px;
     }
   }
 }
