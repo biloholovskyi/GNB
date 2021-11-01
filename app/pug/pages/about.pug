@@ -1,0 +1,27 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'О компании'
+
+block content
+  .about-page
+    .about-page__main
+      img.decor(src='../media/icon/rect2.svg' alt='rect')
+      .container
+        .row
+          .col-6
+            h1.about-main__title О компании
+            .about-main__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    .about-second
+      .container
+        .row
+          .col-6
+            .about-second__title.decor-title.decor-title__bottom О компании
+            .about-second__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dui vivamus arcu felis bibendum ut tristique. Sed augue lacus viverra vitae. Ut pharetra sit amet aliquam id. Nisl nisi scelerisque eu ultrices vitae auctor eu. Sit amet tellus cras adipiscing enim eu. Tincidunt augue interdum velit euismod in pellentesque massa. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Leo vel fringilla est ullamcorper. Nisi scelerisque eu ultrices vitae auctor eu.
+          .col-3
+            img.about-second__image.about-second__image--first(alt='img' src='../media/image/some-pick1.jpg')
+          .col-3
+            img.about-second__image(alt='img' src='../media/image/some-pick2.jpg')
+
+  include ../modules/main-form

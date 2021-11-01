@@ -19,6 +19,7 @@ $main-dark: #111;
   border-top: 1px solid #FFFFFF;
   border-left: 1px solid #FFFFFF;
   position: relative;
+  transition: all .3s;
   
   &::after {
     content: '';
@@ -48,6 +49,12 @@ $main-dark: #111;
     top: 0;
     right: 0;
     background-color: #fff;
+  }
+
+  &--hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   &--color {
@@ -107,6 +114,7 @@ $main-dark: #111;
       margin-right: 36px;
       display: block;
       position: relative;
+      transition: all .3s;
 
       &:last-child {
         margin-right: 0;
@@ -121,6 +129,7 @@ $main-dark: #111;
         color: #FFFFFF;
         position: relative;
         z-index: 2;
+        transition: all .3s;
       }
 
       &.active {
@@ -160,6 +169,13 @@ $main-dark: #111;
   @media (max-width: 767px) {
     &::before {
       display: none;
+    }
+  }
+
+  &__bottom {
+    &::before {
+      top: 4px;
+      left: -166px;
     }
   }
 }

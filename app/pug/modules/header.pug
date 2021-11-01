@@ -1,4 +1,4 @@
-header.header
+header.header.main-header
   .header__left
     a.header__logo(href='/')
       img.logo__img(src='../media/icon/logo.svg' alt='GBN')
@@ -21,8 +21,10 @@ header.header
 
   .header__right
     a.header__number(href='tel:88001111111') 8 800 111 11 11
-    .main-button Связаться с нами
+    .main-button.header__origin-button Связаться с нами
       .main-button__right-border
+    // скрытая кнопка для плавной замены при скролле
+    .main-button.main-button--color.main-button--hidden.header__scroll-button Связаться с нами
 
   .header__humb
     img(src='../media/icon/humb.svg' alt='menu')

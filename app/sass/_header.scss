@@ -6,12 +6,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 36px;
-  background-color: #333;
+  background-color: transparent;
   margin-right: 36px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  transition: all .3s;
 
   &__left {
     display: flex;
@@ -72,6 +73,7 @@
     line-height: 32px;
     text-align: right;
     color: #FFFFFF;
+    transition: all .3s;
   }
 
   .main-button {
@@ -80,6 +82,10 @@
 
   &__humb {
     display: none;
+  }
+
+  &--shadow {
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.04), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443), 0 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458);
   }
 
   &--content {

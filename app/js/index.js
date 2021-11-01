@@ -1,9 +1,11 @@
 import 'normalize.css';
 
 import Cases from "./cases";
+import Header from "./header";
 
 $(document).ready((e) => {
   const cases = new Cases();
+  const header = new Header();
 
   // show mobile menu
   $('.header__humb').on('click', function () {
@@ -31,6 +33,9 @@ $(document).ready((e) => {
       cases.closeCases();
     }
   })
+
+  // Switch header after scroll
+  $(window).on('scroll', function () {header.scrollHeader($(this))})
 });
 
 $(window).resize(() => {
