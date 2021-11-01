@@ -17,7 +17,9 @@ $(document).ready((e) => {
   casesSlider.length > 0 && casesSlider.owlCarousel({
     items: 3,
     margin: 24,
-    dots: false
+    dots: false,
+    nav: true,
+    navText: ''
   })
 
   // show mobile menu
