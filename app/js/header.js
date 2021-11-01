@@ -13,7 +13,7 @@ class Header {
         $('.header__scroll-button').removeClass('main-button--hidden');
       }
     } else {
-      $('.main-header').removeClass('header--shadow')
+      headerBlock.removeClass('header--shadow')
 
       if(headerBlock.hasClass('main-header')) {
         headerBlock.removeClass('header--content');
@@ -34,7 +34,7 @@ class Header {
     $('body, html').animate({scrollTop: top}, 1000);
   }
 
-  toggleMobileMenu = (that) => {
+  toggleMobileMenu = () => {
     const headerNav = $('.header .navigations');
     headerNav.toggleClass('active');
 
