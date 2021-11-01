@@ -2,10 +2,12 @@ import 'normalize.css';
 
 import Cases from "./cases";
 import Header from "./header";
+import AboutMap from "./about-map";
 
 $(document).ready((e) => {
   const cases = new Cases();
   const header = new Header();
+  const aboutMap = new AboutMap();
 
   (function () {
     header.scrollHeader(pageYOffset)
@@ -81,6 +83,12 @@ $(document).ready((e) => {
 
   // Switch header after scroll
   $(window).on('scroll', function () {header.scrollHeader($(this))})
+
+  // about map
+  const mapItem = $('.about-map__map path');
+  mapItem.on('mousemove', (e) => aboutMap.moveInfo(e))
+  mapItem.on('mouseenter', (e) => aboutMap.showInfo(e))
+  mapItem.on('mouseleave', (e) => aboutMap.hiddenInfo(e))
 });
 
 $(window).resize(() => {
