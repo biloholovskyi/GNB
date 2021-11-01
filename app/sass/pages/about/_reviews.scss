@@ -1,0 +1,142 @@
+@import "../../var";
+
+.reviews {
+  padding: 100px 0;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: $main-dark;
+    margin-bottom: 64px;
+  }
+
+  &__body {
+    position: relative;
+    width: 100%;
+
+    .owl-nav {
+      width: max-content;
+      position: absolute;
+      top: -111px;
+      right: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 45px;
+        top: 0;
+        left: 50%;
+        margin-left: -.5px;
+        background-color: #E6E6E6;
+      }
+
+      button {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #E6E6E6 !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .3s;
+        position: relative;
+
+        &:hover {
+          background-color: transparent !important;
+        }
+
+        &::after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -10px;
+          margin-left: -10px;
+          background-image: url(../media/icon/arrow-right.svg);
+          background-position: center;
+          background-size: contain;
+          transition: all .3s;
+        }
+
+        &.disabled {
+          opacity: 1;
+
+          &::after {
+            opacity: .36;
+          }
+        }
+      }
+
+      .owl-prev {
+        border-right: none !important;
+
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .owl-next {
+        border-left: none !important;
+      }
+    }
+  }
+
+  &__item {
+    .text {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $family-second;
+      color: $main-dark;
+      margin-bottom: 18px;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-right: 12px;
+      }
+
+      &__info {
+        .name {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          font-family: $family-second;
+          color: $main-dark;
+        }
+
+        .place {
+          font-family: $family-second;
+          color: $main-gray;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

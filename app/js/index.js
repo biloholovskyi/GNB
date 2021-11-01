@@ -22,6 +22,16 @@ $(document).ready((e) => {
     navText: ''
   })
 
+  // reviews slider
+  const reviewSlider = $('.reviews__body');
+  reviewSlider.length > 0 && reviewSlider.owlCarousel({
+    items: 3,
+    margin: 24,
+    dots: false,
+    nav: true,
+    navText: ''
+  })
+
   // show mobile menu
   $('.header__humb').on('click', function () {
     const headerNav = $('.header .navigations');
