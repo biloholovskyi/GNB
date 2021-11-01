@@ -17,6 +17,21 @@
 
   &__body {
     width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      z-index: 2;
+      width: 183px;
+      height: 154.81px;
+      position: absolute;
+      bottom: 32px;
+      left: -153px;
+      background-image: url(../media/icon/hex.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
     .owl-stage-outer {
       overflow: visible;
