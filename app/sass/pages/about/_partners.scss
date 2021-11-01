@@ -1,0 +1,62 @@
+@import "../../var";
+
+.partners {
+  padding: 275px 0 278px 0;
+  position: relative;
+  background: #FAFAFA;
+  overflow: hidden;
+
+  .partners__decor-top,
+  .partners__decor-bot {
+    width: 101%;
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  .partners__decor-top {
+    top: -1px;
+  }
+
+  .partners__decor-bot {
+    bottom: -1px;
+    transform: rotate(180deg);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: $main-dark;
+    font-family: $family-second;
+    margin-bottom: 64px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(100% / 6);
+    height: 150px;
+    padding: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transition: all .3s;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(1) brightness(0.3);
+      }
+    }
+  }
+}
