@@ -23,6 +23,29 @@ class Header {
       }
     }
   }
+
+  scrollToForm = () => {
+    // if click in button on mobile menu
+    if($(window).width() < 992) {
+      this.toggleMobileMenu($(this));
+    }
+
+    const top = $('.main-form').offset().top - 150;
+    $('body, html').animate({scrollTop: top}, 1000);
+  }
+
+  toggleMobileMenu = (that) => {
+    const headerNav = $('.header .navigations');
+    headerNav.toggleClass('active');
+
+    if(headerNav.hasClass('active')) {
+      $('.header__humb img').attr('src', '../media/icon/close.svg')
+        .addClass('active');
+    } else {
+      $('.header__humb img').attr('src', '../media/icon/humb.svg')
+        .removeClass('active')
+    }
+  }
 }
 
 export default Header;

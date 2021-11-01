@@ -21,6 +21,7 @@ $main-gray: #777;
   border-left: 1px solid #FFFFFF;
   position: relative;
   transition: all .3s;
+  cursor: pointer;
   
   &::after {
     content: '';
