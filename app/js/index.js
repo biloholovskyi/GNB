@@ -7,6 +7,19 @@ $(document).ready((e) => {
   const cases = new Cases();
   const header = new Header();
 
+  (function () {
+    header.scrollHeader(pageYOffset)
+  }())
+
+  // sliders
+  // cases-slider
+  const casesSlider = $('.cases-slider__body');
+  casesSlider.length > 0 && casesSlider.owlCarousel({
+    items: 3,
+    margin: 24,
+    dots: false
+  })
+
   // show mobile menu
   $('.header__humb').on('click', function () {
     const headerNav = $('.header .navigations');
@@ -22,13 +35,13 @@ $(document).ready((e) => {
   })
 
   // show case
-  $('.cases__item').on('click', cases.showCases)
+  $('.cases__item, .cases-slider__item').on('click', cases.showCases)
   // close case
-  $('.cases .cases__more .close').on('click', cases.closeCases)
+  $('.case-modal .close').on('click', cases.closeCases)
 
   // close case modal after click on body
   $(document).on('click', function (e) {
-    const caseModal = $('.cases .cases__more .body, .cases__item');
+    const caseModal = $('.case-modal .body, .cases__item, .cases-slider__item');
     if (!caseModal.is(e.target) && caseModal.has(e.target).length === 0) {
       cases.closeCases();
     }

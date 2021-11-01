@@ -1,13 +1,16 @@
 class Cases {
+  constructor() {
+    this.modal = $('.case-modal');
+  }
   showCases = () => {
-    $('.cases .cases__more').addClass('active');
+    this.modal.addClass('active');
 
     // deactivate scroll
     $('body, html').addClass('no-scroll')
   }
 
   closeCases = () => {
-    $('.cases .cases__more').removeClass('active');
+    this.modal.removeClass('active');
 
     // activate scroll
     $('body, html').removeClass('no-scroll')

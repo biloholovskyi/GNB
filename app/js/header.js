@@ -1,8 +1,9 @@
 class Header {
   scrollHeader = (that) => {
-    const headerBlock = $('.header');
+    const scrollPoint = typeof that === 'number' ? that : that.scrollTop();
 
-    if(that.scrollTop() > 300) {
+    const headerBlock = $('.header');
+    if(scrollPoint > 300) {
       headerBlock.addClass('header--shadow');
 
       if(headerBlock.hasClass('main-header')) {
