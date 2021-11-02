@@ -3,11 +3,13 @@ import 'normalize.css';
 import Cases from "./cases";
 import Header from "./header";
 import AboutMap from "./about-map";
+import Tools from "./tools";
 
 $(document).ready((e) => {
   const cases = new Cases();
   const header = new Header();
   const aboutMap = new AboutMap();
+  const tools = new Tools();
 
   (function () {
     header.scrollHeader(pageYOffset)
@@ -70,16 +72,21 @@ $(document).ready((e) => {
 
   // show case
   $('.cases__item, .cases-slider__item').on('click', cases.showCases)
-  // close case
+  // close case or tools
   $('.case-modal .close').on('click', cases.closeCases)
 
   // close case modal after click on body
   $(document).on('click', function (e) {
-    const caseModal = $('.case-modal .body, .cases__item, .cases-slider__item');
+    const caseModal = $('.case-modal .body, .cases__item, .cases-slider__item, .tools__item');
     if (!caseModal.is(e.target) && caseModal.has(e.target).length === 0) {
       cases.closeCases();
     }
   })
+
+  // show tools
+  $('.tools__item').on('click', tools.show)
+  // switch category tools
+  $('.tools__nav ul li a').on('click', function (e) {tools.switch(e, $(this))})
 
   // Switch header after scroll
   $(window).on('scroll', function () {header.scrollHeader($(this))})

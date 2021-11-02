@@ -2,6 +2,7 @@ class Cases {
   constructor() {
     this.modal = $('.case-modal');
   }
+
   showCases = () => {
     this.modal.addClass('active');
 

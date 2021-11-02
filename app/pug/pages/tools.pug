@@ -1,0 +1,163 @@
+extends ../layout/main-content
+
+block variables
+  - const pageTitle = 'Спецтехника'
+
+block content
+  include ../modules/case-modal
+
+  .tools
+    .container
+      .row
+        .col-12
+          h1.tools__title.decor-title Спецтехника
+        .col-12.col-lg-3
+          .tools__nav
+            ul
+              li.active
+                a(href='#all') Вся спецтехника
+              li
+                a(href='#autokran') Автокраны
+              li
+                a(href='#manipulator') Манипуляторы
+              li
+                a(href='#avtovishki') Автовышки
+              li
+                a(href='#bashinue_i_bistromontiruemie_kranu') Башенные и быстромонтируемые краны
+              li
+                a(href='#gruzovie_perevozki') Грузовые перевозки
+
+        .col-12.col-lg-9
+          .tools__list
+            .tools__item.autokran.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Камаз 55713-1в
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+
+            .tools__item.autokran.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Камаз 55713-1в
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+            .tools__item.autokran.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Камаз 55713-1в
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+
+            .tools__item.manipulator.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Манипулятор 55713-1в
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+            .tools__item.manipulator.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Манипуляторы
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+
+            .tools__item.avtovishki.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Автовышки
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+            .tools__item.bashinue_i_bistromontiruemie_kranu.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Башенные краны
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+
+
+            .tools__item.gruzovie_perevozki.visible
+              .image(style='background-image: url(../media/image/tool.jpg)')
+                img(src='../media/icon/rect-img.svg' alt='rect').image__rect
+              .info
+                .info__name Грузовые перевозки
+                .info__line
+                  span.line__name Грузоподьемность:
+                  span.line__value 25 тонн
+                .info__line
+                  span.line__name Длинна стрелы:
+                  span.line__value 28м + 8м
+                .info__price от 1 100 руб. / час
+                .info__more
+                  span Подробнее
+                  .icon
+  include ../modules/main-form
