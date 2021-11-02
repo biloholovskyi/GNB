@@ -4,16 +4,20 @@ import Cases from "./cases";
 import Header from "./header";
 import AboutMap from "./about-map";
 import Tools from "./tools";
+import Calc from "./calc";
 
 $(document).ready((e) => {
   const cases = new Cases();
   const header = new Header();
   const aboutMap = new AboutMap();
   const tools = new Tools();
+  const calc = new Calc();
 
   (function () {
     header.scrollHeader(pageYOffset)
+    calc.calculate();
   }())
+
 
   // sliders
   // cases-slider
@@ -96,6 +100,11 @@ $(document).ready((e) => {
   mapItem.on('mousemove', (e) => aboutMap.moveInfo(e))
   mapItem.on('mouseenter', (e) => aboutMap.showInfo(e))
   mapItem.on('mouseleave', (e) => aboutMap.hiddenInfo(e))
+
+  // calculating
+  $('.calc__form select').on('change', function () {calc.calculate()})
+  $('.calc__form input').on('input', function () {calc.calculate()})
+  $('#hitsaus .button').on('click', function () {calc.switchButton($(this))})
 });
 
 $(window).resize(() => {

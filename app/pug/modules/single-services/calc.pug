@@ -1,0 +1,39 @@
+.calc
+  .container
+    .row
+      .col-12.col-md-6
+        .calc__title.decor-title Калькулятор
+        .calc__desc Расчитайте стоимость работ с помошью калькулятора
+      .col-12.col-md-6
+        form.calc__form
+          .double
+            .input__item.input__item--select
+              label(for='material') Материал
+              select#material(name='material')
+                option(value='steel') Сталь
+                option(value='plastic') Пластик
+                option(value='wooden') Дерево
+
+            .input__item.input__item--placeholder
+              label(for='range') Диаметр труб
+              .border-wrapper
+                input#range(type='text' name='range' size='1' onkeydown='size=value.length+1||1' onkeyup='onkeydown()')
+                .placeholder ММ
+                .border
+          .double
+            .input__item.input__item--placeholder
+              label(for='long') Протяженность труб
+              .border-wrapper
+                input#long(type='text' name='long' size='1' onkeydown='size=value.length+1||1' onkeyup='onkeydown()')
+                .placeholder ПМ
+                .border
+            .buttons
+              .buttons__label Требуеться сварка?
+              .buttons__wrapper#hitsaus
+                .button.button-yeas.active Да
+                .button.button-no Нет
+        .calc__result
+          .label Итого
+          .result
+            span.result__value 58 588 588
+            span.result__slug  руб

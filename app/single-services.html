@@ -44,6 +44,59 @@
         </div>
       </div>
     </div>
+    <div class="calc">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="calc__title decor-title">Калькулятор</div>
+            <div class="calc__desc">Расчитайте стоимость работ с помошью калькулятора</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <form class="calc__form">
+              <div class="double">
+                <div class="input__item input__item--select">
+                  <label for="material">Материал</label>
+                  <select id="material" name="material">
+                    <option value="steel">Сталь</option>
+                    <option value="plastic">Пластик</option>
+                    <option value="wooden">Дерево</option>
+                  </select>
+                </div>
+                <div class="input__item input__item--placeholder">
+                  <label for="range">Диаметр труб</label>
+                  <div class="border-wrapper">
+                    <input id="range" type="text" name="range" size="1" onkeydown="size=value.length+1||1" onkeyup="onkeydown()">
+                    <div class="placeholder">ММ</div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="double">
+                <div class="input__item input__item--placeholder">
+                  <label for="long">Протяженность труб</label>
+                  <div class="border-wrapper">
+                    <input id="long" type="text" name="long" size="1" onkeydown="size=value.length+1||1" onkeyup="onkeydown()">
+                    <div class="placeholder">ПМ</div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="buttons__label">Требуеться сварка?</div>
+                  <div class="buttons__wrapper" id="hitsaus">
+                    <div class="button button-yeas active">Да</div>
+                    <div class="button button-no">Нет</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="calc__result">
+              <div class="label">Итого</div>
+              <div class="result"><span class="result__value">58 588 588</span><span class="result__slug"> руб</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main-form"><img class="rect-img" alt="rect" src="../media/icon/rect.svg">
       <div class="container">
         <div class="row">
