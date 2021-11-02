@@ -1,10 +1,9 @@
-@import '../../var';
+@import '../var';
 
-.about-page__main {
+.main-block {
   min-height: 100vh;
   padding-top: 282px;
   position: relative;
-  background-image: url(../media/image/about-bg.jpg);
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -39,7 +38,7 @@
     left: 0;
   }
 
-  .about-main__title {
+  &__title {
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -53,7 +52,7 @@
     z-index: 10;
   }
 
-  .about-main__desc {
+  &__desc {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -63,21 +62,27 @@
     position: relative;
     z-index: 10;
   }
+
+  &__button {
+    position: relative;
+    z-index: 10 !important;
+    margin-top: 36px;
+  }
 }
 
 @media (max-width: 767px) {
-  .about-page__main {
+  .main-block {
     min-height: auto;
     padding-top: 144px;
     padding-bottom: 120px;
 
-    .about-main__title {
+    &__title {
       font-size: 28px;
       line-height: 36px;
       margin-bottom: 16px;
     }
 
-    .about-main__desc {
+    &__desc {
       font-size: 16px;
       line-height: 24px;
     }

@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'ГНБ БУРЕНИН'
+
+block content
+  .main-block(style='background-image: url(../media/image/single.jpg);')
+    img.decor(src='../media/icon/rect2.svg' alt='rect')
+    .container
+      .row
+        .col-12.col-lg-6
+          h1.main-block__title ГНБ бурение
+          .main-block__desc Горизонтально направленное бурение успешно применяется в прокладке подземных коммуникаций.
+          .main-button.main-button--color.main-block__button Заказать услугу
+
+
+  include ../modules/main-form

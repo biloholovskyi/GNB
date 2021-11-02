@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.4.0/css/grid.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Услуги</title>
+    <title>ГНБ БУРЕНИН</title>
   </head>
   <body>
-    <header class="header header--content">
-      <div class="header__left"><a class="header__logo" href="/"><img class="logo__img" src="../media/icon/logo-color.svg" alt="GBN">
+    <header class="header main-header">
+      <div class="header__left"><a class="header__logo" href="/"><img class="logo__img" src="../media/icon/logo.svg" alt="GBN">
           <div class="logo__text">Управление механизацией №1</div></a>
         <nav class="header__nav navigations">
           <ul>
@@ -23,41 +25,21 @@
         </nav>
       </div>
       <div class="header__right"><a class="header__number" href="tel:88001111111">8 800 111 11 11</a>
-        <div class="main-button main-button--color btn-to-form">Связаться с нами</div>
+        <div class="main-button header__origin-button btn-to-form">Связаться с нами
+          <div class="main-button__right-border"></div>
+        </div>
+        <!-- скрытая кнопка для плавной замены при скролле-->
+        <div class="main-button main-button--color main-button--hidden header__scroll-button btn-to-form">Связаться с нами</div>
       </div>
       <div class="header__humb"><img src="../media/icon/humb.svg" alt="menu"></div>
     </header>
-    <div class="services">
+    <div class="main-block" style="background-image: url(../media/image/single.jpg);"><img class="decor" src="../media/icon/rect2.svg" alt="rect">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="services__title decor-title">Услуги</div>
-          </div>
-        </div>
-      </div>
-      <div class="pallet-services">
-        <div class="container">
-          <div class="row">
-            <div class="col-12"><a class="big-plate" href="/single-services.html" style="background-image: url(../media/image/services/1.jpg)">
-                <div class="big-plate__name">Горизонтальное направленное бурение</div>
-                <div class="pallet-services__more"><span>Подробнее</span>
-                  <div class="icon"></div>
-                </div></a></div>
-            <div class="col-12 col-lg-4"><a class="small-plate" href="/single-services.html" style="background-image: url(../media/image/services/2.jpg)">
-                <div class="small-plate__name">Микротонеллирование</div>
-                <div class="pallet-services__more"><span>Подробнее</span>
-                  <div class="icon"></div>
-                </div></a></div>
-            <div class="col-12 col-lg-4"><a class="small-plate" href="/single-services.html" style="background-image: url(../media/image/services/3.jpg)">
-                <div class="small-plate__name">Строительство инжерных коммуникаций</div>
-                <div class="pallet-services__more"><span>Подробнее</span>
-                  <div class="icon"></div>
-                </div></a></div>
-            <div class="col-12 col-lg-4"><a class="small-plate" href="/single-services.html" style="background-image: url(../media/image/services/4.jpg)">
-                <div class="small-plate__name">Другие услуги</div>
-                <div class="pallet-services__more"><span>Подробнее</span>
-                  <div class="icon"></div>
-                </div></a></div>
+          <div class="col-12 col-lg-6">
+            <h1 class="main-block__title">ГНБ бурение</h1>
+            <div class="main-block__desc">Горизонтально направленное бурение успешно применяется в прокладке подземных коммуникаций.</div>
+            <div class="main-button main-button--color main-block__button">Заказать услугу</div>
           </div>
         </div>
       </div>
@@ -114,6 +96,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="buildjs/owl.carousel.min.js"></script>
     <script src="buildjs/index.js"></script>
   </body>
 </html>
