@@ -1,0 +1,63 @@
+@import '../../var';
+
+.advantage {
+  padding: 100px 0;
+
+  &__left {
+    padding-right: 20px;
+
+    .advantage__list-item {
+      &::before {
+        background-image: url(../media/icon/polygon-chek.svg);
+      }
+    }
+  }
+
+  &__right {
+    padding-left: 20px;
+
+    .advantage__list-item {
+      &::before {
+        background-image: url(../media/icon/polygon-error.svg);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 56px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: $main-dark;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 56px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $family-second;
+    color: $main-dark;
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 5px;
+      left: 0;
+    }
+  }
+}
