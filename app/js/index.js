@@ -13,9 +13,11 @@ $(document).ready((e) => {
   const tools = new Tools();
   const calc = new Calc();
 
+  const calcBlock = $('.calc__form');
+
   (function () {
     header.scrollHeader(pageYOffset)
-    calc.calculate();
+    calcBlock.length > 0 && calc.calculate();
   }())
 
 
