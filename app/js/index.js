@@ -5,6 +5,7 @@ import Header from "./header";
 import AboutMap from "./about-map";
 import Tools from "./tools";
 import Calc from "./calc";
+import StageTabs from './stage-tabs'
 
 $(document).ready((e) => {
   const cases = new Cases();
@@ -12,6 +13,7 @@ $(document).ready((e) => {
   const aboutMap = new AboutMap();
   const tools = new Tools();
   const calc = new Calc();
+  const stageTabs = new StageTabs();
 
   const calcBlock = $('.calc__form');
 
@@ -107,6 +109,9 @@ $(document).ready((e) => {
   $('.calc__form select').on('change', function () {calc.calculate()})
   $('.calc__form input').on('input', function () {calc.calculate()})
   $('#hitsaus .button').on('click', function () {calc.switchButton($(this))})
+
+  // stage tab
+  $('.stage-work__tabs .tab-nav__item').on('click', (e) =>  {stageTabs.switchTab(e)})
 });
 
 $(window).resize(() => {

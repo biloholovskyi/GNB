@@ -69,6 +69,48 @@ block content
             .advantage__list-item Если необходимо проложить трубопровод высокой протяженности или на большой глубине, бестраншейный способ обходится дороже;
             .advantage__list-item Максимальная длина для стандартных установок ГНБ составляет 350-400 м, в случае прокладки более длинных трубопроводов, придется делать стыки.
 
+  .stage-work
+    .container
+      .row
+        .col-12
+          .stage-work__title Этапность работ
+
+          .stage-work__tabs
+            .tab-nav
+              .tab-nav__item.active(data-link='first')
+                span.number 01
+                span.name Подготовительный этап
+              .tab-nav__item(data-link='pilot')
+                span.number 02
+                span.name Бурение пилотной скважины
+              .tab-nav__item(data-link='width')
+                span.number 03
+                span.name Расширение скважины
+              .tab-nav__item(data-link='close')
+                span.number 04
+                span.name Затягивание трубопровода или футляра
+              .tab-nav__item(data-link='finish')
+                span.number 05
+                span.name Сдача работ
+
+
+
+            .tab-body.active#first
+              img(src='../media/image/some-pick1.jpg' alt='image').tab-body__image
+              .tab-body__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .tab-body#pilot
+              img(src='../media/image/some-pick2.jpg' alt='image').tab-body__image
+              .tab-body__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .tab-body#width
+              img(src='../media/image/single.jpg' alt='image').tab-body__image
+              .tab-body__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .tab-body#close
+              img(src='../media/image/bg.jpg' alt='image').tab-body__image
+              .tab-body__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .tab-body#finish
+              img(src='../media/image/about-bg.jpg' alt='image').tab-body__image
+              .tab-body__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
   include ../modules/cases-slider
 
   include ../modules/main-form
