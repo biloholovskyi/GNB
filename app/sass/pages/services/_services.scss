@@ -14,6 +14,22 @@
     font-family: $family-second;
     margin-bottom: 53px;
   }
+
+  &--index {
+    padding: 100px 0;
+
+    .services__title {
+      margin-bottom: 64px;
+      font-size: 48px;
+      line-height: 56px;
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {

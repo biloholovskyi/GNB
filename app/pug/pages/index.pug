@@ -4,3 +4,23 @@ block variables
   - const pageTitle = 'Главная'
 
 block content
+  .main-block(style='background-image: url(../media/image/main-bg.jpg);')
+    img.decor(src='../media/icon/rect2.svg' alt='rect')
+    .container
+      .row
+        .col-12.col-lg-8
+          h1.main-block__title Горизонтально-направленное бурение
+          .main-block__desc В Татарстане и любой точке России
+          .main-button.main-button--color.main-block__button Заказать услугу
+
+  .services.services--index
+    .container
+      .row
+        .col-12
+          .services__title Услуги
+
+    include ../modules/pallet-services
+
+  include ../modules/cases-slider-index
+
+  include ../modules/main-form-gray
