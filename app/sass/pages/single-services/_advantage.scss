@@ -61,3 +61,39 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .advantage {
+    &__left {
+      margin-bottom: 80px;
+      padding-right: 0;
+    }
+
+    &__right {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .advantage {
+    padding: 56px 0;
+
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+
+    &__list-item {
+      padding-left: 48px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+
+      &::before {
+        top: 0;
+      }
+    }
+  }
+}
