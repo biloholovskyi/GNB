@@ -6,6 +6,7 @@ import AboutMap from "./about-map";
 import Tools from "./tools";
 import Calc from "./calc";
 import StageTabs from './stage-tabs'
+import Preloader from "./preloader";
 
 $(document).ready((e) => {
   const cases = new Cases();
@@ -14,12 +15,14 @@ $(document).ready((e) => {
   const tools = new Tools();
   const calc = new Calc();
   const stageTabs = new StageTabs();
+  const preloader = new Preloader();
 
   const calcBlock = $('.calc__form');
 
   (function () {
     header.scrollHeader(pageYOffset)
     calcBlock.length > 0 && calc.calculate();
+    preloader.setProgress(10)
   }())
 
 
