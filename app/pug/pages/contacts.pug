@@ -1,0 +1,31 @@
+extends ../layout/main-content
+
+block variables
+  - const pageTitle = 'Услуги'
+
+block content
+  .contacts
+    img(alt='rect' src='../media/icon/rect-dark.svg').contacts__rect
+
+    .container
+      .row
+        .col-12.col-lg-3
+          .contacts__title.decor-title Контакты
+          .contacts__item
+            .name Телефон
+            a(href='tel:88005006095').contact 8 (800) 500-60-95
+          .contacts__item
+            .name E-mail
+            a(href='mailto:baza@stg116.ru').contact baza@stg116.ru
+          .contacts__item
+            .name Адрес:
+            .contact 420073, РТ, г. Казань, ул. Аделя Кутуя, 118
+
+
+
+    .contacts__map#map
+      img(alt='rect' src='../media/icon/rect-map.svg').contacts__rect-map
+      img(alt='rect' src='../media/icon/rect3.svg').contacts__rect-map-responsive
+      img(alt='pin' src='../media/icon/pin.png').map__pin
+
+  include ../modules/main-form-contacts
